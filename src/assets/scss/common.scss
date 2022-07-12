@@ -1,0 +1,62 @@
+@import "@/assets/scss/variables.scss";
+@import "@/assets/scss/mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+*,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input {
+  font-family: "Inter", sans-serif;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+
+  &:disabled {
+    background-color: inherit;
+  }
+}
+
+
+body {
+  background-color:#FFF;
+
+  * {
+    color: #000;
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+}
+
+@include mobile {
+  .container {
+    justify-content: space-between;
+    max-width: 100vw;
+  }
+}
